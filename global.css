@@ -1,0 +1,812 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+  font-family:small-caps 100%/200% serif;
+ width: 1300px;
+background-color: background: rgb(217,129,57);
+background: radial-gradient(circle, rgba(217,129,57,0.9472163865546218) 86%, rgba(231,86,54,0.9332107843137255) 100%);
+ 
+}
+menu{
+   width: 600px;
+   margin: 0px; 
+   position: static;
+}
+header{
+position:relative ;
+ 
+}
+
+
+button {
+  font-size: 18px;
+  color: #050505;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+button:focus,
+button:hover {
+  color: #000000;
+}
+
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #020202;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  clear: both;
+  content: '';
+  display: flex;
+  z-index: 10;
+
+}
+nav{
+  
+    float:right;
+    bottom:;
+    position:;
+    /* background-color: rgba(245, 242, 247, 0.6);*/
+     
+}
+menu ul li{
+  display: inline-block;
+}
+nav,ul, li{
+    list-style: none; 
+    margin-left:205px;
+    float:left;
+    padding: 3px 0;
+    position:static;
+    overflow: hidden;
+
+    
+}
+nav, li, ul, a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        display: block;
+        padding: ;
+    } 
+   .imagen img{
+  width:px;
+  height: px;
+bottom: px;
+display: flex;
+justify-content: flex-start;
+margin-top: -50px;
+}
+.info{
+  margin-top:45px;
+  display:flex;
+  margin-left:505px;
+}
+.info figure .capa h2{
+  color: #e5e5e5;
+  position: relative;
+  text-align: center;
+  margin-left:70px;
+  top: -560px;
+}
+ 
+.info figure .capa p{
+  color: #e5e5e5;
+  text-align: center;
+  margin-top:-520px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+article{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  margin-right:px;
+ 
+}
+
+figure{
+  margin-top:5px;
+}
+.terapia{
+  display: flex;
+  margin-top:px;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  
+}
+.terapia figure{
+position: relative;
+width: 350px;
+height: 350px;
+border-radius:8px;
+box-shadow: 0px 15px 25px rgb(232, 204, 183);
+cursor: pointer;
+overflow:hidden;
+left: 600px;
+}
+.terapia figure img{
+  height: 100%;
+  width: 100%;
+  transition: all 500ms ease-out;
+}
+.terapia figure .capa-uno{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(226, 220, 232, 0.096);
+  transition:all 500ms ease-out ;
+  opacity: 0;
+  visibility: hidden;
+  text-align:center;
+}
+.terapia figure:hover>img{
+  transform: scale(1.1);
+}
+.terapia figure:hover>.capa-uno{
+  opacity: 1;
+  visibility: visible;
+}
+.terapia figure:hover .capa-uno h3{
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.terapia figure .capa-uno h3{
+  font-weight:400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tarot{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: ;
+}
+.tarot figure{
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 15px 25px rgb(232, 204, 183);
+cursor: pointer;
+left:970px;
+}
+.tarot figure img{
+  height: 100%;
+  width: 100%;
+  transition: all 500ms ease-out;
+}
+.tarot figure .capa-dos{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:  rgba(226, 220, 232, 0.096);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+ 
+}
+.tarot figure:hover>img{
+  transform: scale(1.1);
+}
+.tarot figure:hover> .capa-dos{
+  opacity: 1;
+  visibility: visible;
+}
+.tarot figure:hover >.capa-dos h3{
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.tarot figure .capa-dos h3{
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 10px;
+}
+
+  .reiki{
+    width: 58%;
+    height: 58%;
+    display: flex;
+    margin.top:;
+  }
+  .reiki figure {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow:  0px 15px 25px   rgb(232, 204, 183);
+    cursor: pointer;
+    overflow: hidden;
+    left: 1380px;
+  }
+  .reiki figure img{
+    height: 100%;
+    width: 100%;
+  transition: all 500ms ease-out;
+
+  }
+.reiki figure .capa-tres {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  background-color:  rgba(226, 220, 232, 0.096) ;
+}
+.reiki figure:hover >img{
+  transform: scale(1.1);
+}
+.reiki figure:hover .capa-tres{
+  opacity: 1;
+  visibility: visible;
+}
+.reiki figure:hover> .capa-tres h3{
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.reiki figure .capa-tres h3{
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 30px;
+}
+
+.limpieza{
+  width: 58%;
+  height: 58%;
+  display: flex;
+  bottom:;
+}
+.limpieza figure{
+  width: 350px;
+    height: 350px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow:  0px 15px 25px   rgb(232, 204, 183);
+    cursor: pointer;
+    overflow: hidden;
+    top:450px;
+    left: -468px;
+}
+.limpieza figure img{
+  height: 100%;
+  width: 100%;
+transition: all 500ms ease-out;
+}
+.limpieza figure .capa-cuatro{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  background-color:  rgba(226, 220, 232, 0.096)  ;
+}
+.limpieza figure:hover>img{
+  transform: scale(1.1);
+}
+.limpieza figure:hover .capa-cuatro{
+  opacity: 1;
+  visibility: visible;
+}
+.limpieza figure:hover .capa-cuatro h3{
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.limpieza figure .capa-cuatro h3{
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 30px;
+}
+
+.pendulo{
+  width: 58%;
+  height: 58%;
+  display: flex;
+  bottom:;
+}
+.pendulo figure{
+  width: 350px;
+  height: 350px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow:  0px 15px 25px   rgb(232, 204, 183);
+  cursor: pointer;
+  overflow: hidden;
+  top:450px;
+  left:-78px;
+}
+
+.pendulo figure img{
+  height: 100%;
+  width: 100%;
+transition: all 500ms ease-out;
+}
+.pendulo figure .capa-cinco{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  background-color:  rgba(226, 220, 232, 0.096)  ;
+}
+.pendulo figure:hover> img{
+  transform: scale(1.1);
+}
+.pendulo figure:hover .capa-cinco{
+  opacity: 1;
+  visibility: visible;
+}
+.pendulo figure:hover .capa-cinco h3{
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.pendulo figure .capa-cinco h3{
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 30px;
+}
+
+.mesa{
+  width: 58%;
+  height: 58%;
+  margin-top: ;
+}
+.mesa figure{
+  width: 350px;
+  height: 350px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow:  0px 15px 25px   rgb(232, 204, 183);
+  cursor: pointer;
+  overflow: hidden;
+  top:450px;
+  left:331px
+}
+.mesa figure img{
+  height: 100%;
+  width: 100%;
+transition: all 500ms ease-out;
+}
+.mesa figure .capa-seis{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  background-color:  rgba(226, 220, 232, 0.096)  ;
+}
+.mesa figure:hover> img{
+  transform: scale(1.1);
+}
+.mesa figure:hover .capa-seis{
+  opacity: 1;
+  visibility: visible;
+}
+.mesa figure:hover .capa-seis h3{
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.mesa figure .capa-seis h3{
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 30px;
+}
+
+.meditacion{
+  height: 58%;
+  width: 58%;
+  margin-top:;
+}
+.meditacion figure{
+  width: 350px;
+  height: 350px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow:  0px 15px 25px   rgb(232, 204, 183);
+  cursor: pointer;
+  overflow: hidden;
+  top:950px;
+  left: -780px 
+}
+.meditacion figure img{
+  height: 100%;
+  width: 100%;
+transition: all 500ms ease-out;
+}
+.meditacion figure .capa-siete{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  background-color: rgba(226, 220, 232, 0.096) ;
+}
+.meditacion figure:hover>img{
+  transform: scale(1.1);
+}
+.meditacion figure:hover .capa-siete{
+  opacity: 1;
+  visibility: visible;
+}
+.meditacion figure:hover .capa-siete h3{
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.meditacion figure .capa-siete h3{
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 30px;
+}
+
+
+h2 beneficios{
+  margin-top: 200px;
+}
+.columna{
+  display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
+        
+}
+
+.columna div{
+  width: 50%;
+    padding: 10px;
+    margin-top:1000px;
+    margin-left: 500px;
+}
+.columna> div:first-child{
+  margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*h1{
+    font-size: 45px;
+    text-align: center;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+}*/
+
+	
+  h1{
+    text-align: center;
+    margin-left:585px;
+    color: #101010;
+    margin-top:10px;
+    font-size:30px;
+    font-family:Georgia, 'Times New Roman', Times, serif 
+  }
+h2{
+    font-size: 20px;
+    text-align: center ;
+    color: #0d0d0d;
+    margin-top:;
+    margin-left:500px;
+}
+
+
+h3{
+    font-size: 18px;
+    margin-top: 100px;
+    
+}
+h4, p{
+    font-size: 14px;
+}
+
+
+.card {
+  width: 370px;
+  height: 310px;
+  background:  #3d9764f1;
+  box-shadow: 0 1px 25px rgba(0,0,0,0.2);
+  position:absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 12px 10px;
+  margin-bottom:;
+  margin-top:4000px;
+}
+
+.card_load {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  float: left;
+  background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 
+  40%, #e5e5e5 48%);
+  border-radius: 50%;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  animation: load89234 2s infinite;
+}
+
+.card_load_extreme_title {
+  width: 200px;
+  height: 30px;
+  position: relative;
+  float: right;
+  border-radius: 5px;
+  background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 
+  40%, #e5e5e5 48%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  animation: load89234 2s infinite;
+}
+
+.card_load_extreme_descripion {
+  width: 190px;
+  height: 247px;
+  position: relative;
+  float: right;
+  border-radius: 5px;
+  background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 
+  40%, #e5e5e5 48%);
+  margin-top: 10px;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  animation: load89234 2s infinite;
+}
+
+@keyframes load89234 {
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.carddos {
+  width: 370px;
+  height: 310px;
+  background:  rgba(163, 55, 67, 0.682) ;
+  box-shadow: 0 1px 25px rgba(0,0,0,0.2);
+  position:absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 12px 10px;
+  margin: bottom 300px;;
+  margin-top: 4000px;
+  margin-left: 700px;
+}
+
+.card_load {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  float: left;
+  background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 
+  40%, #e5e5e5 48%);
+  border-radius: 50%;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  /*animation: load89234 2s infinite;*/
+}
+
+.card_load_extreme_title {
+  width: 200px;
+  height: 30px;
+  position: relative;
+  float: right;
+  border-radius: 5px;
+  background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 
+  40%, #e5e5e5 48%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  animation: load89234 2s infinite;
+}
+
+.card_load_extreme_descripion {
+  width: 190px;
+  height: 247px;
+  position: relative;
+  float: right;
+  border-radius: 5px;
+  background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 
+  40%, #e5e5e5 48%);
+  margin-top: 10px;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  animation: load89234 2s infinite;
+}
+
+@keyframes load89234 {
+  100% {
+    background-position: -100% 0;
+  }
+}
+.cardtres {
+  width: 370px;
+  height: 310px;
+  background: #462369ae;
+  box-shadow: 0 1px 25px rgba(107, 61, 233, 0.683))1);
+  position:absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 12px 10px;
+  margin-top: 4000px;
+margin-left: -700px; 
+
+}
+
+.card_load {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  float:left;
+  /*background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 
+  40%, #e5e5e5 48%);*/
+background-image: url(/images/cafew.png);
+  border-radius: 50%;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  
+}
+
+.card_load_extreme_title {
+  width: 200px;
+  height: 30px;
+  position: relative;
+  float: right;
+  border-radius: 5px;
+  /*background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 
+  40%, #e5e5e5 48%);*/
+  background-size: 200% 100%;
+  background-position: 100% 0;
+ 
+}
+
+.card_load_extreme_descripion {
+  width: 190px;
+  height: 247px;
+  position: relative;
+  float: right;
+  border-radius: 5px;
+  background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 
+  40%, #e5e5e5 48%);
+  margin-top: 10px;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  
+}
+
+@keyframes load89234 {
+  100% {
+    background-position: -100% 0;
+  }
+}
+.mapa{
+  margin-top: 800px;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 200px;
+margin-left: 800px;
+}
+
+.redes{
+ margin-top:300%;
+ margin-left:500px;
+padding: ;
+display:inline-table;
+
+}
+.redes ul li{
+  
+  justify-content:space-between ;
+  row-gap:50px ;
+ 
+}
+
